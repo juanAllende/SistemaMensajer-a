@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #E8EBE4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    height: 90vh;
+    background-color: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    background-color: #FFF;
+}
+
+.user-status {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info .user-name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #444749;
+    margin-bottom: 4px;
+}
+
+.user-info .user-status-text {
+    font-size: 14px;
+    color: #828485;
+}
+
+.contacts {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact:hover {
+    background-color: #F7BFB6;
+}
+
+.contact-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.contact-info .contact-name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #1B1F21;
+}
+
+.contact-info .contact-last-message {
+    font-size: 14px;
+    color: #828485;
+}
+
+.new-chat-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #EF7F6D;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.new-chat-btn:hover {
+    background-color: #E94F37;
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    background-color: #D4DCFF;
+}
+
+.main-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.main-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #1B1F21;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #444749;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contact-section {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .main-section {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .main-logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
